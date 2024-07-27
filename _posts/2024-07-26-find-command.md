@@ -120,5 +120,5 @@ find . -type f -size +1G       # files larger than 1GB
 - **find / -type f -size +100M**: Finds files larger than 100MB starting from the root directory.
 - **find . -type f -size +1G**: Finds files larger than 1GB in the current directory.
 
-  ###TODO
+  ### TODO:
   Need to add some more complex commands examples to chain together find with other tools like grep to find stuff like passwords and API keys other little goodies
