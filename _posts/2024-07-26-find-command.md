@@ -7,17 +7,17 @@ I love the `find` command. i really might be love of the most unreated Linux too
 Here are some fundamental `find` commands to get you started:
 
 ```bash
-find . -name foo.txt                                       # search under the current dir
-find . -name "foo.*"                                       # wildcard for extensions 
-find . -name "*.txt"                                        # wildcard for names
-find . -type f                                                 # regular files
-find . -type d    -name foo*                            # directories
-find /users/al -name Cookbook -type d           # search '/users/al' for dir named..
-find . -type l, f   -name foo                            # symbolic links and files
-find /dev -type c                                           # char devices, think consoles and serial
-find /dev -type b                                           # block devices , storage
-find . -type p                                                # named pipes
-find . -type s                                                # sockets
+find . -name foo.txt                     # search under the current dir
+find . -name "foo.*"                     # wildcard for extensions 
+find . -name "*.txt"                     # wildcard for names
+find . -type f                           # regular files
+find . -type d    -name foo*             # directories
+find /users/al -name Cookbook -type d    # search '/users/al' for dir named..
+find . -type l, f   -name foo            # symbolic links and files
+find /dev -type c                        # char devices, think consoles and serial
+find /dev -type b                        # block devices , storage
+find . -type p                           # named pipes
+find . -type s                           # sockets
 
 ```
 
@@ -43,9 +43,9 @@ This command searches for `foo.scala` in `/opt`, `/usr`, and `/var` directories.
 To perform a case-insensitive search, use the `-iname` flag:
 
 ```bash
-find . -iname foo                          # find foo, Foo, FOo, FOO, etc.
-find . -iname foo -type d                  # same thing, but only dirs
-find . -iname foo -type f                  # same thing, but only files
+find . -iname foo                  # find foo, Foo, FOo, FOO, etc.
+find . -iname foo -type d          # same thing, but only dirs
+find . -iname foo -type f          # same thing, but only files
 ```
 
 - **find . -iname foo**: Searches for `foo` in a case-insensitive manner.
@@ -119,3 +119,6 @@ find . -type f -size +1G       # files larger than 1GB
 
 - **find / -type f -size +100M**: Finds files larger than 100MB starting from the root directory.
 - **find . -type f -size +1G**: Finds files larger than 1GB in the current directory.
+
+  ###TODO
+  Need to add some more complex commands examples to chain together find with other tools like grep to find stuff like passwords and API keys other little goodies
