@@ -16,10 +16,10 @@ timezone:
 
 title: jhndn.sk # the main title
 
-tagline: just my rablmings and non-ssense # it will display as the sub-title
+tagline: just my rablmings and non-sense # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Pernaol blog filled with stuff for me. 
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
