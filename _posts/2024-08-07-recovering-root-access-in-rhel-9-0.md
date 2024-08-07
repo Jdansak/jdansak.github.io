@@ -13,18 +13,15 @@ If you've found yourself locked out of the root account in Red Hat Enterprise Li
 Upon system reboot, you'll encounter the GRUB bootloader screen. It’s crucial to act quickly here. Use the `UpArrow` and `DownArrow` keys to stop the automatic boot countdown. The countdown can be quite short, ranging from 1 to 5 seconds.
 
 ### Step 2: Modify Boot Parameters
-With the GRUB menu open, navigate to the boot entry you wish to edit. Typically, you'll edit the default boot entry. Look for the line that starts with `linux` and make the following adjustments:
+With the GRUB menu open, navigate to the boot entry you wish to edit. Typically, you'll edit the default boot entry. Look for the line that starts with `linux` press the `e` key to edit the entry.
+
+   make the following adjustments:
 - **Remove Parameters**: Delete any `console=` and `vconsole=` parameters. These are often present in virtual machine installations.
-- **Add Init Parameter**: Append `init=/bin/bash` at the end of the line to instruct the system to boot directly to a bash shell.
+- **Add Init Parameter**: Append ` rw init=/bin/bash` at the **end** of the line to instruct the system to boot directly to a bash shell.
 
 After making these changes, press `Ctrl+x` to start booting with these parameters.
 
-### Step 3: Remount Root Filesystem
-Once the system boots, you'll be at the `bash-5.1#` prompt. Your filesystem is mounted in read-only mode at this stage. To change the root password, you need write access, so enter the following command:
-```bash
-mount -o remount,rw /
-```
-This command remounts the root filesystem as read/write.
+
 
 ### Step 4: Change Root Password
 Now that you have write access, you can reset the root password by executing:
