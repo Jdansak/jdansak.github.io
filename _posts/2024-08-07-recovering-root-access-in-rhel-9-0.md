@@ -21,7 +21,7 @@ With the GRUB menu open, navigate to the boot entry you wish to edit. Typically,
 
 After making these changes, press `Ctrl+x` to start booting with these parameters.
 
-![editing GRUB boot string](https://share.cleanshot.com/V3ZLDGPZ)
+![editing GRUB boot string](/assets/img/gifs/grub_Edit.gif)
 
 
 ### Step 4: Change Root Password
