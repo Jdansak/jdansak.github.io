@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Recovering Root Access in RHEL 9.0: A Step-by-Step Guide"
+date: 2024-08-07
+categories: [RHEL, Linux, Troubleshooting]
+---
+
 # Recovering Root Access in RHEL 9.0: A Step-by-Step Guide
 
 If you've found yourself locked out of the root account in Red Hat Enterprise Linux (RHEL) 9.0, don't panic. There's a method to regain access by resetting the root password directly from the GRUB bootloader. This process involves booting into single-user mode using GRUB and making changes to the system configuration. Here’s a detailed guide on how to do this.
