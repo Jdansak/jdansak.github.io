@@ -20,7 +20,7 @@ With the GRUB menu open, navigate to the boot entry you wish to edit. Typically,
 - **Add Init Parameter**: Append ` rw init=/bin/bash` at the **end** of the line to instruct the system to boot directly to a bash shell.
 
 After making these changes, press `Ctrl+x` to start booting with these parameters.
-{% raw %}{% <img src=https://github.com/Jdansak/jdansak.github.io/blob/main/assets/img/GRUB_Edit.gif class="img-responsive" alt=""> %}{% endraw %}
+{% raw %}<img src=https://github.com/Jdansak/jdansak.github.io/blob/main/assets/img/GRUB_Edit.gif class="img-responsive" alt="">{% endraw %}
 
 ### Step 4: Change Root Password
 Now that you have write access, you can reset the root password by executing:
